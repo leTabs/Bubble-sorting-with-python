@@ -1,4 +1,4 @@
-unsorted = [43, 5, 1, 7, 80, 4, 9,-9, -5, 2, 6, -12]
+unsorted_array = [43, 5, 1, 7, 80, 4, 9,-9, -5, 2, 6, -12]
 # random array
 def bubble_sorting_algorithm(array):
     for i in range(len(array)):
@@ -10,5 +10,5 @@ def bubble_sorting_algorithm(array):
             if array[item]>array[item+1]:
                 array[item], array[item+1] = array[item+1], array[item]
     return array
-print(bubble_sorting_algorithm(unsorted))
+print(bubble_sorting_algorithm(unsorted_array))
 # output: [-12, -9, -5, 1, 2, 4, 5, 6, 7, 9, 43, 80]
